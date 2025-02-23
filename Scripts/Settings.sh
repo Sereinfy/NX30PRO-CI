@@ -40,5 +40,3 @@ sed -i '/luci-app-mtk/d' ./.config
 sed -i '/wifi-profile/d' ./.config
 echo "CONFIG_PACKAGE_luci-app-mtk=n" >> ./.config
 echo "CONFIG_PACKAGE_wifi-profile=n" >> ./.config
-
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
