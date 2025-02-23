@@ -33,7 +33,13 @@ echo "CONFIG_TARGET_OPTIMIZATION=\"-O2 -pipe -march=armv8-a+crypto+crc -mcpu=cor
 if [ -n "$WRT_PACKAGE" ]; then
 	echo -e "$WRT_PACKAGE" >> ./.config
 fi
-
+# mosdns
+if [ -f "./mosdns.sh" ]; then
+    echo "文件 mosdns.sh 存在，正在执行..."
+    ./mosdns.sh  # 执行 mosdns.sh 文件
+else
+    echo "文件 mosdns.sh 不存在"
+fi
 #调整mtk系列配置
 sed -i '/MEMORY_SHRINK/d' ./.config
 sed -i '/luci-app-mtk/d' ./.config
