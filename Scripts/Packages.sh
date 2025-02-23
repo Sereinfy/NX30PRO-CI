@@ -107,3 +107,11 @@ UPDATE_VERSION() {
 UPDATE_VERSION "sing-box"
 UPDATE_VERSION "tailscale"
 
+
+# mosdns
+if [ -f "./mosdns.sh" ]; then
+    cd "$(dirname "$PWD")" || { echo "无法切换到上级目录"; exit 1; }
+    ./mosdns.sh
+else
+    echo "文件 mosdns.sh 不存在"
+fi
