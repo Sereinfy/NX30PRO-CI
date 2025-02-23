@@ -2,8 +2,8 @@
 CONFIG_TARGET_mediatek_mt7981_DEVICE_h3c_nx30pro=y
 
 #科学插件调整
-CONFIG_PACKAGE_luci-app-openclash=y
-
+#CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-homeproxy=y
 # IPv6支持:
 CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
 CONFIG_PACKAGE_ip6tables=y
