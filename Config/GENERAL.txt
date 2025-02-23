@@ -14,7 +14,7 @@ CONFIG_PACKAGE_ipv6helper=y
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
-#CONFIG_PACKAGE_luci-app-mosdns=y
+CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_autocore-arm=y
 
 #删除插件
